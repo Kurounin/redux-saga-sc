@@ -5,11 +5,11 @@ import { createEventChannel } from './eventChannel'
 import { handleEmit, handleRequest } from './workers'
 
 export function* watchEmits(socket) {
-  yield* takeEvery(EMIT, handleEmit, socket)
+  yield takeEvery(EMIT, handleEmit, socket)
 }
 
 export function* watchRequests(socket) {
-  yield* takeEvery(REQUEST, handleRequest, socket)
+  yield takeEvery(REQUEST, handleRequest, socket)
 }
 
 export function* watchRemote(socket, event = 'dispatch') {
