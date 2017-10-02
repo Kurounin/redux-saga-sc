@@ -1,5 +1,4 @@
-import { takeEvery } from 'redux-saga'
-import { call, put, take } from 'redux-saga/effects'
+import { call, put, take, takeEvery } from 'redux-saga/effects'
 
 import { EMIT, REQUEST } from './actions'
 import { createEventChannel } from './eventChannel'
