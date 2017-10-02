@@ -1,5 +1,5 @@
 import expect from 'expect'
-import { takeEvery } from 'redux-saga'
+import { takeEvery } from 'redux-saga/effects'
 
 import { EMIT, watchEmits } from '../../src'
 import { handleEmit } from '../../src/workers'
